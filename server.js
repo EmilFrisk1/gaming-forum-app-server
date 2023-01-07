@@ -16,6 +16,7 @@ app.use(
 
 const PORT = process.env.PORT || 5000;
 const dbURI = process.env.MONGO_DB_URI;
+console.log(dbURI);
 
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
